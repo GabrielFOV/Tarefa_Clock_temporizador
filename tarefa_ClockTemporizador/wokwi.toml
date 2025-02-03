@@ -1,7 +1,7 @@
 [wokwi]
 version = 1
-firmware = 'build/tarefa_ClockTemporizador.uf2'
-elf = 'build/tarefa_ClockTemporizador.elf'
+firmware = 'build/tarefa_semaforo.uf2'
+elf = 'build/tarefa_semaforo.elf'
 
 gdbServerPort=3333
 rfc2217ServerPort = 4000

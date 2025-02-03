@@ -35,28 +35,28 @@ pico_sdk_init()
 
 # Add executable. Default name is the project name, version 0.1
 
-add_executable(tarefa_ClockTemporizador tarefa_ClockTemporizador.c )
+add_executable(tarefa_semaforo tarefa_semaforo.c )
 
-pico_set_program_name(tarefa_ClockTemporizador "tarefa_ClockTemporizador")
-pico_set_program_version(tarefa_ClockTemporizador "0.1")
+pico_set_program_name(tarefa_semaforo "tarefa_semaforo")
+pico_set_program_version(tarefa_semaforo "0.1")
 
 # Modify the below lines to enable/disable output over UART/USB
-pico_enable_stdio_uart(tarefa_ClockTemporizador 1)
-pico_enable_stdio_usb(tarefa_ClockTemporizador 1)
+pico_enable_stdio_uart(tarefa_semaforo 1)
+pico_enable_stdio_usb(tarefa_semaforo 1)
 
 # Add the standard library to the build
-target_link_libraries(tarefa_ClockTemporizador
+target_link_libraries(tarefa_semaforo
         pico_stdlib)
 
 # Add the standard include files to the build
-target_include_directories(tarefa_ClockTemporizador PRIVATE
+target_include_directories(tarefa_semaforo PRIVATE
         ${CMAKE_CURRENT_LIST_DIR}
 )
 
 # Add any user requested libraries
-target_link_libraries(tarefa_ClockTemporizador 
+target_link_libraries(tarefa_semaforo
         
         )
 
-pico_add_extra_outputs(tarefa_ClockTemporizador)
+pico_add_extra_outputs(tarefa_semaforo)
 
